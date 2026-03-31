@@ -1,23 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html class="dark" lang="en">
 <head>
-<title>wahengchang</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>wahengchang | Developer &amp; Tech Notes</title>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQ2GFFXNDD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-HQ2GFFXNDD');
 </script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-surface-variant": "#c4c7c8",
+          "primary-fixed-dim": "#c6c6c7",
+          "surface-container": "#201f1f",
+          "outline": "#8e9192",
+        },
+        fontFamily: {
+          "headline": ["Inter"],
+          "body": ["Inter"],
+          "label": ["Space Grotesk"]
+        },
+      },
+    },
+  }
+</script>
+<style>
+  body { background-color: #0D0D0D; color: #FFFFFF; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+</style>
 </head>
-<body>
+<body class="font-body selection:bg-white selection:text-black">
 
-<h1>wahengchang</h1>
-<ul>
-  <li><a href="https://wahengchang.github.io/ai-study-note/">AI Study Note</a></li>
-</ul>
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl border-b border-white/10">
+  <div class="flex justify-between items-center px-8 py-6 max-w-2xl mx-auto">
+    <span class="text-xl font-black tracking-tighter text-white">wahengchang</span>
+  </div>
+</nav>
+
+<main class="min-h-screen pt-32 pb-24 px-8 max-w-2xl mx-auto">
+
+  <header class="mb-24 space-y-4">
+    <h1 class="text-7xl md:text-8xl font-black tracking-tighter leading-none text-white">
+      wahengchang
+    </h1>
+    <div class="flex items-center gap-4">
+      <span class="w-8 h-[2px] bg-white"></span>
+      <p class="font-label text-sm uppercase tracking-widest text-on-surface-variant">
+        Developer &amp; Tech Notes
+      </p>
+    </div>
+  </header>
+
+  <section class="space-y-12">
+
+    <article class="group">
+      <a class="block space-y-2" href="https://wahengchang.github.io/ai-study-note/" target="_blank" rel="noopener">
+        <div class="flex items-baseline justify-between">
+          <h2 class="text-3xl font-bold tracking-tight text-white group-hover:text-primary-fixed-dim transition-colors">
+            AI Study Note
+          </h2>
+          <span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </div>
+        <p class="text-lg text-on-surface-variant font-body leading-relaxed max-w-prose">
+          Deep dive into transformer architecture and LLM scaling. Technical breakdowns of attention mechanisms and training dynamics.
+        </p>
+        <div class="pt-2">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-outline bg-surface-container px-2 py-1">Research.01</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="group">
+      <a class="block space-y-2" href="https://github.com/wahengchang" target="_blank" rel="noopener">
+        <div class="flex items-baseline justify-between">
+          <h2 class="text-3xl font-bold tracking-tight text-white group-hover:text-primary-fixed-dim transition-colors">
+            GitHub
+          </h2>
+          <span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </div>
+        <p class="text-lg text-on-surface-variant font-body leading-relaxed max-w-prose">
+          Source code for projects and open-source contributions. A living repository of scripts, frameworks, and architecture patterns.
+        </p>
+        <div class="pt-2">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-outline bg-surface-container px-2 py-1">Source.02</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="group">
+      <a class="block space-y-2" href="https://www.linkedin.com/in/waheng/" target="_blank" rel="noopener">
+        <div class="flex items-baseline justify-between">
+          <h2 class="text-3xl font-bold tracking-tight text-white group-hover:text-primary-fixed-dim transition-colors">
+            LinkedIn
+          </h2>
+          <span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </div>
+        <p class="text-lg text-on-surface-variant font-body leading-relaxed max-w-prose">
+          Professional networking and career history. Connecting with the global tech community and industry leaders.
+        </p>
+        <div class="pt-2">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-outline bg-surface-container px-2 py-1">Career.03</span>
+        </div>
+      </a>
+    </article>
+
+  </section>
+
+</main>
+
+<footer class="w-full py-12 border-t border-white/5 bg-[#0E0E0E]">
+  <div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-2xl mx-auto gap-4">
+    <p class="font-mono text-[10px] uppercase tracking-widest text-neutral-400">
+      &copy; 2024 wahengchang
+    </p>
+    <div class="flex gap-8">
+      <a class="font-mono text-[10px] uppercase tracking-widest text-neutral-600 hover:text-white transition-colors" href="https://github.com/wahengchang" target="_blank" rel="noopener">Github</a>
+      <a class="font-mono text-[10px] uppercase tracking-widest text-neutral-600 hover:text-white transition-colors" href="https://www.linkedin.com/in/waheng/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
